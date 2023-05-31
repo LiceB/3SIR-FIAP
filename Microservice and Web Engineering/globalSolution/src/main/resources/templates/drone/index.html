@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{headFragment :: head('Listar drones')}"><meta charset="UTF-8"></head>
+
+<body>
+	<nav th:replace="~{menuFragment :: nav()}"></nav>
+	
+	<div class="container-fluid">
+		<h3 class="text-left fs-2 text-center">Lista de Drones</h3>
+		<hr>
+		<a type="button" class="btn btn-info mt-2" href="drone/create"> Criar</a>
+		<hr>
+		<table id="tbdrone" class="table table-success table-bordered table-lg mt-4">
+			<thead>
+				<th>Id</th>
+				<th>Modelo</th>
+				<th>Data Compra</th>
+				<th>Capacidade Carga</th>
+				<th>Número série</th>
+				<th>Licença Voo</th>
+				<th>Capacidade Bateria</th>
+				<th>Editar</th>
+				<th>Deletar</th>
+			</thead>
+			<tbody>
+				<tr th:each="drone : ${drones}">
+					<td th:text="${drone.getId()}"></td>
+					<td th:text="${drone.getModelo()}"></td>
+					<td th:text="${drone.getDataCompra()}"></td>
+					<td th:text="${drone.getCapacidadeCarga()}"></td>
+					<td th:text="${drone.getNumeroSerie()}"></td>
+					<td th:text="${drone.getIdLicenca()}"></td>
+					<td th:text="${drone.getCapacidadeBateria()}"></td>
+					<td><a th:href="@{/drone/edit/{droneId} (droneId = ${drone.id})}">Editar</a></td>
+					<td><a th:href="@{/drone/delete/{droneId} (droneId = ${drone.id})}">Deletar</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+</body>

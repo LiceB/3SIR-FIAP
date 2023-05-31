@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" th:fragment="nav()">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">Fiap</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mynavbar">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/licenca">Licença Voo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/drone">Drone</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/historico">Histórico Voo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/telemetria">Telemetria</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<div style="float: right;">
+						<p class="text-white" th:text="${nome}"></p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
