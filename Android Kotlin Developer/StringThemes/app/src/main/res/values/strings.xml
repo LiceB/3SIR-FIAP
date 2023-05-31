@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">StringThemes</string>
+    <string name="first_lyric">
+        That night when I saw you\nI was about to leave\nYou were in the corner\nHangin\' like a masterpiece\nYou dancin\' with all your best friends\nOr maybe you could spend the song with me\n
+    </string>
+    <string name="welcome_guys">Welcome Guys</string>
+    <string name="second_lyric">"        Had a tight t-shirt I could see what's underneath Talkin' over speakers You're leanin' close to me You tuck my hair behind my ear I put my finger through the loop of your jeans      "</string>
+</resources>

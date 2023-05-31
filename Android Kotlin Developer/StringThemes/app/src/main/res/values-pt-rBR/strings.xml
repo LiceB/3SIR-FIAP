@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="welcome_guys">Bem vindos</string>
+    <string name="first_lyric">
+        Naquela noite quando te vi\neu estava prestes a sair\nVocê estava no canto\nParecendo uma obra-prima\nVocê está dançando com todos os seus melhores amigas\nOu talvez você pudesse gastar uma música comigo\n
+    </string>
+    <string name="second_lyric" tools:ignore="ExtraTranslation">
+        Tinha uma camiseta justa\nEu pudia ver o que estava por baixo\nFalando sobre alto-falantes\nVocê está se inclinando perto de mim\nVocê coloca meu cabelo atrás da minha orelha\nEu coloquei meu dedo na alça do seu jeans\n
+    </string>
+</resources>
