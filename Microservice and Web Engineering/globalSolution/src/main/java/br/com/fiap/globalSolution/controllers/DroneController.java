@@ -88,6 +88,12 @@ public class DroneController {
 		return new ResponseEntity<Drone>(drone, HttpStatus.CREATED);
 	}
 	
+	@GetMapping("/index/{id}")
+	public List<Drone> getDroneByLicenca(@PathVariable("id") Long idLicenca) {
+		List<Drone> drones = droneRepository.findByIdLicenca(idLicenca);
+		return drones;
+	}
+	
 	@GetMapping("/delete/{id}")
 	public String delete(@PathVariable("id")Long id) {
 		droneRepository.deleteById(id);
