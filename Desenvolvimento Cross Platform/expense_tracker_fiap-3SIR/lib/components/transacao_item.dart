@@ -6,7 +6,8 @@ import '../models/transacao.dart';
 
 class TransacaoItem extends StatelessWidget {
   final Transacao transacao;
-  const TransacaoItem({Key? key, required this.transacao}) : super(key: key);
+  final void Function()? onTap;
+  const TransacaoItem({Key? key, required this.transacao, required this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +31,7 @@ class TransacaoItem extends StatelessWidget {
                 ? Colors.pink
                 : Colors.green),
       ),
+      onTap: onTap,
     );
   }
 }

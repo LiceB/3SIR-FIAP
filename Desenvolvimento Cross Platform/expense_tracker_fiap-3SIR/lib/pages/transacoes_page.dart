@@ -22,7 +22,9 @@ class _TransacoesPageState extends State<TransacoesPage> {
           itemCount: transacoes.length,
           itemBuilder: (context, index) {
             final transacao = transacoes[index];
-            return TransacaoItem(transacao: transacao);
+            return TransacaoItem(transacao: transacao, onTap: () {
+              Navigator.pushNamed(context, '/transacao-detalhe', arguments: transacao);
+            },);
           },
           separatorBuilder: (context, index) {
             return const Divider();
