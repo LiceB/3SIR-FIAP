@@ -1,6 +1,5 @@
 import 'package:expense_tracker/models/banco.dart';
 import 'package:expense_tracker/models/conta.dart';
-import 'package:expense_tracker/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class ContaItem extends StatelessWidget {
@@ -10,14 +9,6 @@ class ContaItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => HomePage(),
-          ),
-        );
-      },
       leading: CircleAvatar(
         backgroundImage: AssetImage('images/${bancosMap[conta.bancoId]?.logo}'),
       ),
