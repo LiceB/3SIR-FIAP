@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.recyclerview.app-mergeDebugResources-27:/layout/activity_main.xml",
+        "source": "com.example.recyclerview.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.recyclerview.app-mergeDebugResources-27:/layout/popup_item_dialog.xml",
+        "source": "com.example.recyclerview.app-main-30:/layout/popup_item_dialog.xml"
+    },
+    {
+        "merged": "com.example.recyclerview.app-mergeDebugResources-27:/layout/item_list_view.xml",
+        "source": "com.example.recyclerview.app-main-30:/layout/item_list_view.xml"
+    }
+]
