@@ -1,4 +1,4 @@
-#Sun Aug 20 00:18:17 BRT 2023
+#Sun Aug 27 01:49:24 BRT 2023
 base.0=C\:\\Users\\alice\\Desktop\\Faculdade\\Arquivos Faculdade\\Terceiro ano\\3SIR-FIAP\\Android Kotlin Developer\\[a-2-1] RecyclerView\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\alice\\Desktop\\Faculdade\\Arquivos Faculdade\\Terceiro ano\\3SIR-FIAP\\Android Kotlin Developer\\[a-2-1] RecyclerView\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\alice\\Desktop\\Faculdade\\Arquivos Faculdade\\Terceiro ano\\3SIR-FIAP\\Android Kotlin Developer\\[a-2-1] RecyclerView\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
