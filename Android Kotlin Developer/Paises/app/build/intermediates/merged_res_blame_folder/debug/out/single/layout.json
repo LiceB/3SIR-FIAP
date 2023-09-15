@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.paises.app-mergeDebugResources-24:/layout/add_dialog_fragment.xml",
+        "source": "com.example.paises.app-main-27:/layout/add_dialog_fragment.xml"
+    },
+    {
+        "merged": "com.example.paises.app-mergeDebugResources-24:/layout/activity_main.xml",
+        "source": "com.example.paises.app-main-27:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.paises.app-mergeDebugResources-24:/layout/pais_list_view.xml",
+        "source": "com.example.paises.app-main-27:/layout/pais_list_view.xml"
+    }
+]
