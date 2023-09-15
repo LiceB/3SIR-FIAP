@@ -8,7 +8,7 @@ import com.example.paises.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity(), IAddPais {
 
     lateinit var bind: ActivityMainBinding
-    val itensAdapter = PaisItemAdapter()
+    val Paisadapter = PaisItemAdapter()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bind = ActivityMainBinding.inflate(layoutInflater)
@@ -17,20 +17,25 @@ class MainActivity : AppCompatActivity(), IAddPais {
         bind.paisesRecycler.layoutManager =
             StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
 
-        itensAdapter.setList(mutableListOf(
-            PaisModel("Brasil", "America do Sul"),
-            PaisModel("Australia", "Oceania"),
-            PaisModel("China", "Asia"),
-            PaisModel("Egito", "Africa"),
-            PaisModel("Portugal", "Europa")
-        ))
+        bind.paisesRecycler.adapter = Paisadapter
+
+        Paisadapter.setList(
+            mutableListOf(
+                PaisModel("Brasil", "America do Sul"),
+                PaisModel("Australia", "Oceania"),
+                PaisModel("China", "Asia"),
+                PaisModel("Egito", "Africa"),
+                PaisModel("Portugal", "Europa")
+            )
+        )
 
         bind.btnAdd.setOnClickListener {
-            AddDialogFragment.newInstance(this).show(supportFragmentManager, "ADD_DIALOG")
+            AddDialogFragment.newInstance(this)
+                .show(supportFragmentManager, "ADD_DIALOG")
         }
     }
 
     override fun addPais(paisModel: PaisModel) {
-        itensAdapter.addListItem(paisModel)
+        Paisadapter.addListItem(paisModel)
     }
 }

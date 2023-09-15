@@ -38,7 +38,7 @@ class PaisItemAdapter : RecyclerView.Adapter<PaisItemAdapter.PaisesHolder>() {
         )
     }
 
-    override fun getItemCount(): Int = paises.count()
+    override fun getItemCount(): Int = paises.size
 
     override fun onBindViewHolder(holder: PaisesHolder, position: Int) {
         holder.bind(paises[position])
